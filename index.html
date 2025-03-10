@@ -8,24 +8,33 @@
 </head>
 <body>
     <header>
-        <h1>Stock Analysis</h1>
-        <p>Enter a stock symbol and get real-time analysis, financial ratios, and recommendations.</p>
+        <h1>Indian Stock Analysis</h1>
     </header>
 
-    <main>
-        <form id="stock-form">
-            <label for="stock-symbol">Stock Symbol (e.g., TCS.NS):</label>
-            <input type="text" id="stock-symbol" placeholder="Enter stock symbol" required>
-            <button type="submit">Analyze</button>
-        </form>
+    <div id="stock-analysis">
+        <h2>Stock Overview</h2>
+        <p><strong>Ticker:</strong> <span id="stock-ticker">N/A</span></p>
+        <p><strong>PE Ratio:</strong> <span id="pe-ratio">N/A</span></p>
+        <p><strong>ROE:</strong> <span id="roe">N/A</span></p>
+        <p><strong>Market Cap:</strong> <span id="market-cap">N/A</span></p>
+    </div>
 
-        <div id="results">
-            <!-- Results will be displayed here -->
-        </div>
-    </main>
+    <div id="technical-analysis">
+        <h2>Technical Indicators</h2>
+        <p><strong>50-Day SMA:</strong> <span id="sma50">N/A</span></p>
+        <p><strong>200-Day SMA:</strong> <span id="sma200">N/A</span></p>
+        <p><strong>RSI:</strong> <span id="rsi">N/A</span></p>
+    </div>
+
+    <div id="stock-news">
+        <h2>Latest Stock News</h2>
+        <ul id="news-list">
+            <!-- Latest News will be injected here -->
+        </ul>
+    </div>
 
     <footer>
-        <p>&copy; 2025 Stock Analysis by [Your Name].</p>
+        <p>&copy; 2025 Stock Analysis. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
